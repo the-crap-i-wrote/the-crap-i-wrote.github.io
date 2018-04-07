@@ -1,5 +1,7 @@
 $(document).ready(function(){
   $('#comments').each(function(){
+    var url = "https://github.com/the-junk-i-wrote/the-junk-i-wrote.github.io/issues/" + {{ $.Params.ghcommentid }}
+    var api_url = "https://api.github.com/repos/the-junk-i-wrote/the-junk-i-wrote.github.io/issues/" + {{ $.Params.ghcommentid }} + "/comments"
       var api_url = $(this).html();
       $.ajax(api_url, {
           headers: {Accept: "application/vnd.github.v3.html+json"},
@@ -18,11 +20,11 @@ $(document).ready(function(){
                   t += "<div id='gh-comment-hr'></div>";
                   t += comment.body_html;
                   t += "</div>";
-                  $("#gh-comments-list").append(t);
+                  $("#comments").append(t);
               });
           },
           error: function() {
-              $("#gh-comments-list").append("Comments are not open for this post yet.");
+              $("#comments").append("Comments are not open for this post yet.");
           }
       });
     });
