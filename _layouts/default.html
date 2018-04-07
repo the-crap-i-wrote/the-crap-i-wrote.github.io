@@ -35,9 +35,16 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+                {% for p in navigation_pages %}
+                    {% if p.navigation_weight %}
+                        <li>
+                            <a href="{{ p.url }}" {% if p.url == page.url %}class="active"{% endif %}>
+                                {{ p.title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
               </ul>
             </div>
           </div>
