@@ -5,6 +5,6 @@ date:   2018-04-07 23-51:00 +0200
 categories: csharp dev xml model
 ---
 
-# Models, Models, Models!
+todo intro
 
-todo
+todo content
