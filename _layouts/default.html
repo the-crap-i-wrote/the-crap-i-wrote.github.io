@@ -56,9 +56,14 @@
         </div>
 
         <footer class="footer">
-          <div class="container">
-            <p class="text-muted">Thanks for reading</p>
-          </div>
+            <div class="container">
+                <p class="text-muted col-md-4">Thanks for reading</p>
+                <ul class="col-md-4">
+                    {% for i in (1..4) %}
+                    <li>{{ site.posts[i].title }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
         </footer>
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
