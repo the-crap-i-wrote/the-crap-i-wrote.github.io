@@ -1,0 +1,13 @@
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted col-md-4">Thanks for reading</p>
+        <div class="col-md-4">
+            <h5>Latest blog posts</h5>
+            <ul class="nav">
+                {% for post in site.posts limit:2 %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</footer>
