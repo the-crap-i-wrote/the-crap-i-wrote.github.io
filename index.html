@@ -13,7 +13,7 @@ navigation_weight: 1
     <div class="col-lg-4">
         <h4 class="list-group-item-heading">{{ post.title }}</h4>
         <p class="list-group-item-text">{{ post.excerpt }}</p>
-        <a class="btn btn-primary" href="{{ post.url }}">Read more</a>
+        <a class="btn btn-primary" href="{{ post.url }}&ghcommentid={{ post.ghcommentid }}">Read more</a>
     </div>
     {% endfor %}
 </div>
