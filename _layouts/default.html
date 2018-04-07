@@ -59,8 +59,8 @@
             <div class="container">
                 <p class="text-muted col-md-4">Thanks for reading</p>
                 <ul class="col-md-4">
-                    {% for i in (1..4) %}
-                    <li>{{ site.posts[i].title }}</li>
+                    {% for post in site.posts limit:2 %}
+                    <li>{{ post.title }}</li>
                     {% endfor %}
                 </ul>
             </div>
