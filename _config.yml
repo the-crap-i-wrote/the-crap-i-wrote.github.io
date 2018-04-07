@@ -10,4 +10,4 @@ category_dir: /
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.md, LICENSE.md]
+exclude: [README.md, LICENSE]
