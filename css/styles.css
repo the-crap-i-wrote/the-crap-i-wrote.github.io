@@ -5,3 +5,12 @@ html, body {
 body > .container {
   padding-top: 60px;
 }
+
+footer.footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+footer.footer ul li {
+  paddingL 5px;
+}
