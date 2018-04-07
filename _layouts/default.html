@@ -58,7 +58,7 @@
         <footer class="footer">
             <div class="container">
                 <p class="text-muted col-md-4">Thanks for reading</p>
-                <ul class="col-md-4">
+                <ul class="nav col-md-4">
                     {% for post in site.posts limit:2 %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                     {% endfor %}
