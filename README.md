@@ -1,2 +1,2 @@
-# the-crap-i-wrote.github.io
+# the-crap-i-wrote
 ## to-make-stuff-work
