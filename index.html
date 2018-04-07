@@ -7,13 +7,14 @@ navigation_weight: 1
 <h1>The Crap I Wrote</h1>
 <p>To Make Stuff Work</p>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-  {% for category in post.categories %}
-      <span>{{ category }}</span>
-  {% endfor %}
-    </li>
-  {% endfor %}
-</ul>
+<div class="list-group">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="list-group-item">
+        <h4 class="list-group-item-heading">{{ post.title }}</h4>
+        {% for category in post.categories %}
+        <span class="badge">{{ category }}</span>
+        {% endfor %}
+        <p class="list-group-item-text">{{ post.excerpt }}</p>
+    </a>
+    {% endfor %}
+</div>
