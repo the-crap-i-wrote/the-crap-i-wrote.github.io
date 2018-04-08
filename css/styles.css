@@ -1,9 +1,11 @@
 html, body {
-  
+  background-color: #343434;
 }
 
 body > .container {
-  padding-top: 60px;
+  background-color: #fff;
+  margin-top: 90px;
+  padding: 20px;
 }
 
 footer.footer ul {
