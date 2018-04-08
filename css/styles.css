@@ -4,6 +4,9 @@ html, body {
 body > .dark-background {
   background-color: #343434;
 }
+body > .dark-background .container {
+  margin-bottom: 20px;
+}
 
 body > .container {
   margin-top: 90px;
