@@ -1,9 +1,11 @@
 html, body {
+}
+
+body > .dark-background {
   background-color: #343434;
 }
 
 body > .container {
-  background-color: #fff;
   margin-top: 90px;
   padding: 20px;
 }
