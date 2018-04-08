@@ -12,6 +12,7 @@ body > .container {
 
 .container .block {
   background-color: #fff;
+  padding: 20px;
 }
 
 footer.footer ul {
