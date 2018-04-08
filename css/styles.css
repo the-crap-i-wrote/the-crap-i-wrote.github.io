@@ -10,6 +10,10 @@ body > .container {
   padding: 20px;
 }
 
+.container .block {
+  background-color: #fff;
+}
+
 footer.footer ul {
     list-style-type: none;
     margin: 0px;
